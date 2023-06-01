@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import './App.css'
-import { Context } from './reduces/provider'
+import { context } from './reduces/provider'
 
 function App() {
-  const [state, dispatch] = useContext(Context)
+  const [state, dispatch] = useContext(context)
   return (
     <>
     {state.count}
